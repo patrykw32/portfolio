@@ -237,34 +237,17 @@ a{
   height: 50px;
   box-sizing: border-box;
   text-align: center;
-  text-decoration: none;
-  background: none; 
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
-}
-
-.main-buttons .btn-contact{
-  border: 1px solid #FFC53D;
-  border-radius: 15px;
-  color: #FFC53D;
-  background: #fff;
-  transition: all ease 0.4s;
-}
-
-.main-buttons .btn-contact:hover{
-  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-  color: #fff;
-}
-
-.main-content .btn-cv{
   color: #fff;
   background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
   border: 1px solid #FFC53D;
   border-radius: 15px;
   transition: all ease 0.4s;
 }
-.main-content .btn-cv:hover{
+
+.main-buttons .btn:hover{
   color: #FFC53D;
   background: #fff;
 }
