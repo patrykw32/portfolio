@@ -337,7 +337,7 @@ a{
 }
 
 .content-info-desc{
-  width: 60%;
+  max-width: 60%;
   min-height: 80%;
   align-items: center;
   box-sizing: border-box;
