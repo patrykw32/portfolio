@@ -1,0 +1,44 @@
+@media all and (max-width: 1023px){
+
+    /* Hamburger menu to do */
+
+    *{
+        box-shadow: none;
+    }
+
+    .cover-photo-text h1{
+        font-size: 3rem;
+      }
+
+      .cover-photo-text .introduction{
+        font-size: 1.6rem;
+      }
+
+      .about-me-blank{
+        display: none;
+    }
+    
+    .about-me-container, .about-me-content, .content-info, .content-info-desc{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    
+    
+    .about-me-description-box li{
+        font-size: 1rem;
+    }
+    
+    .about-me-container::after{
+        position: static;
+    }
+    
+    .about-me-content .dotted-border::before{
+        content: none;
+    }
+
+
+}
