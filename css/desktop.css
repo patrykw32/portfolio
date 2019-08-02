@@ -9,6 +9,7 @@ body{
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   color: #515151;
+  overflow-x: hidden;
 }
 
 /* START common */
@@ -71,6 +72,11 @@ a{
 .nav .dev{
   margin-left: 3px; 
 }
+
+.menu .mobile-nav {
+  display: none;
+}
+
 .menu ul li{
   display: inline-block;
   margin: 2rem 4rem 0 0;
@@ -443,6 +449,7 @@ a{
   /* width: 100%; */
   margin-top: 100px;
   height: 680px;
+  min-height: 680px;
   position: relative;
 }
 
@@ -472,7 +479,6 @@ a{
 }
 .portfolio-1{
   width: 40%;
-  flex: 1;
 }
 .portfolio-2, .portfolio-3{
   width: 30%;
