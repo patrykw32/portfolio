@@ -26,7 +26,6 @@
 							<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
 							<li><a href="#contact" title="Contact">Contact</a></li>
 						</ul>
-						<nav role="navigation">
 							<div class="mobile-nav">
 								<div class="show-menu-button">
 									<input type="checkbox"/>
@@ -41,7 +40,6 @@
 									<li><a href="#contact" title="Contact">Contact</a></li>
 								</ul>
 							</div>
-						</nav>
 					</div>
 				</nav>
 				<section class="cover-photo">
@@ -150,9 +148,65 @@
 				</article>
 
 			</main>
-			<footer class="contact">
-				
+			<footer id="contact" class="contact-container flex-row">
+				<article class="contact-inner-container">
+					<section class="adress">
+						<div class="envelope flex-col">
+							<p>Please describe your question</p>
+							<p>Send me a message and I will</p>
+							<p>answer you as soon as possible</p>
+						</div>
+						<div class="socials">
 
+
+							<p class="cover-photo-social flex-row">
+								<a href="https://twitter.com" class="social-icons" target="_blank">
+									<span class="icon-twitter">
+											<i class="fab fa-twitter"></i>
+									</span>
+								</a>
+								<a href="https://linkedin.com" class="social-icons" target="_blank">
+									<span class="icon-linkedin">
+										<i class="fab fa-linkedin-in"></i>
+									</span>
+								</a>
+								<a href="https://github.com/patrykw32" class="social-icons" target="_blank">
+									<span class="icon-github">
+										<i class="fab fa-github"></i>
+									</span>
+								</a>	
+								<a href="https://facebook.com" class="social-icons" target="_blank">
+									<span class="icon-fb">
+										<i class="fab fa-facebook-f"></i>
+									</span>
+								</a>
+							</p>
+						</div>
+					</section> 
+					<section class="form">
+						<form class="form-inner flex-col" action="/action_page.php">
+							<span class="form-title">
+									Let's start!
+								</span>
+							<div class="wrap-input">
+								<input class="input1" type="text" id="name" placeholder="Name">
+							</div>
+							<div class="wrap-input">
+								<input class="input1" type="email" id="email" placeholder="Your email adress" name="email">
+							</div>
+							<div class="wrap-input">
+								<input class="input1" type="text" id="topic" placeholder="Topic" name="topic">
+							</div>
+							<div class="wrap-input">
+								<textarea class="input1" name="text" id="mesagge" cols="20" rows="10" placeholder="Message"></textarea>
+							</div>
+							<div class="wrap-input button flex-row">
+								<button type="submit" class="btn form-btn">Send</button>
+							</div>
+						</form>
+					</section>
+				</article>
+				
 			</footer>
 		</section>
 	</BODY>

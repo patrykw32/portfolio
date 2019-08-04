@@ -22,7 +22,7 @@
     box-shadow: none;
     }
     
-    .about-me-container, .about-me-container::after, .about-me-content, .content-info, .content-info-desc,{
+    .about-me-container, .about-me-container::after, .about-me-content, .content-info, .content-info-desc{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -78,9 +78,9 @@
     top: -7px;
     left: -5px;
     cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
+    opacity: 0;
+    z-index: 4;
+    --webkit-touch-callout: none;
     }
 
     

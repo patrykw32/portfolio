@@ -526,8 +526,149 @@ a{
 }
 
 
-
-
-
-
 /* END Main */
+
+
+/* ----------------------------------------------------------------------- */
+
+
+/* START Footer */
+
+.contact-container{
+  width: 100%;
+  height: 785px;
+  background: #FAFAFF;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-inner-container {
+  width: calc(100% - 200px);
+  height: 620px;
+  margin: 0 auto;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.adress{
+  width: 30%;
+  height: 100%;
+  background: #FF9A3D;
+  color: #fff;
+}
+
+.form{
+  width: 70%;
+  height: 100%;
+}
+
+.form-title{
+  font-size: 36px;
+}
+
+.form-inner{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.form-title, .wrap-input{
+  width: 80%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.input1{
+  width: 100%;
+  border-radius: 15px;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 20px 5px;
+    vertical-align:top;
+    height:56px;
+    background:#fff;
+    font-size:13px;
+    color:#666;
+    display:block;
+    background: #FAFAFF;
+}
+
+textarea {
+  height:150px;
+  resize:vertical;
+  line-height:1.4em;
+  resize:vertical;
+}
+
+.form-inner .button{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-inner .btn{
+  width: 100px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+  border: 1px solid #FFC53D;
+  border-radius: 15px;
+  transition: all ease 0.4s; 
+}
+
+.form-inner .btn:hover{
+  color: #FFC53D;
+  background: #fff;
+}
+/* END Footer */
