@@ -20,29 +20,44 @@
 
     .about-me-content, .my-skills-content{
     box-shadow: none;
-    }
-    
-    .about-me-container, .about-me-container::after, .about-me-content, .content-info, .content-info-desc{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 100%;
-        font-size: 1rem;
-        text-align: justify;
-    }
-    
-    
-    .about-me-description-box li{
-        font-size: 1rem;
-    }
-    
-    .about-me-container{
-        background-color: #F8F8F8;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     }
 
-    .about-me-content .dotted-border::before{
-        content: none;
+    .my-skills-content .info{
+        width: 100%;
+    }
+    
+    .about-me-container, .my-skills-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-align: justify;
+}
+    
+
+
+    .content-info, .content-info-desc{
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    }
+
+    
+    .about-me-description-box li{
+    font-size: 1rem;
+    }
+    
+
+    .about-me-content .dotted-border::before, .my-skills-content .dotted-border::before{
+    content: none;
     }
 
     .nav .logo{
