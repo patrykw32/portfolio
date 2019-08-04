@@ -6,6 +6,10 @@
         box-shadow: none;
     }
 
+    .about-me-container::after, .my-skills-container::after{
+        display: none;
+    }
+
     .cover-photo-text h1{
         font-size: 3rem;
     }
@@ -26,8 +30,9 @@
     }
 
     .my-skills-content .info{
-        width: 100%;
-        line-height: 1rem;
+    width: 100%;
+    line-height: 1rem;
+    font-size: 1rem;
     }
     
     .about-me-container, .my-skills-container {
@@ -40,6 +45,7 @@
     font-size: .8rem;
     text-align: justify;
     flex-grow: 1;
+    margin: 0;
 }
     
     .content-info, .content-info-desc{
@@ -47,19 +53,31 @@
     height: auto;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    background-color: #FFC53D;
     }
 
     .content-info{
-    flex-direction: column;
+    flex-direction: row;
     }
 
     .content-info img, .content-info .about-me-description-box{
     margin-bottom: 20px;
+    margin-top: 0;
     }
     
     .content-info-desc, .about-me-description-box li{
-        font-size: .8rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #222222;
+    font-weight: normal;
     }
+
+    .about-me-description-box li .description {
+    font-weight: bold;
+    color: #222222;
+    }
+    
 
     .about-me-content .dotted-border::before, .my-skills-content .dotted-border::before{
     content: none;
@@ -115,7 +133,6 @@
     border-radius: 3px;
     z-index: 1;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                
                 opacity 0.55s ease;
     transform-origin: 4px 0px;
     }
@@ -189,4 +206,34 @@
     }
     /* Portfolio MobileEND*/
 
+
+
+
+    .mobile-skills-title{
+    display: block;
+    position: absolute;
+    top: - 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    font-weight: bold;
+    }
+
+
+}
+
+
+
+@media all and (max-width: 569px){
+    .content-info{
+        flex-direction: column;
+        padding: 20px 20px 0 20px;
+    }
+
+    .content-info-desc {
+        padding: 0 20px 20px 20px;
+    }
 }
