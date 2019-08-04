@@ -10,7 +10,7 @@
         font-size: 3rem;
     }
 
-    .cover-photo-text .introduction{
+    .cover-photo-text .introduction, .main-title-container h2{
     font-size: 1.6rem;
     }
 
@@ -27,6 +27,7 @@
 
     .my-skills-content .info{
         width: 100%;
+        line-height: 1rem;
     }
     
     .about-me-container, .my-skills-container {
@@ -36,25 +37,29 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: justify;
+    flex-grow: 1;
 }
     
-
-
     .content-info, .content-info-desc{
-    flex-direction: row;
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
     }
 
-    
-    .about-me-description-box li{
-    font-size: 1rem;
+    .content-info{
+    flex-direction: column;
+    }
+
+    .content-info img, .content-info .about-me-description-box{
+    margin-bottom: 20px;
     }
     
+    .content-info-desc, .about-me-description-box li{
+        font-size: .8rem;
+    }
 
     .about-me-content .dotted-border::before, .my-skills-content .dotted-border::before{
     content: none;

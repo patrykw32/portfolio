@@ -430,7 +430,7 @@ a{
   border-left-style: dotted;
 }
 
-.info{
+.my-skills-content .info{
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -442,9 +442,6 @@ a{
   margin: 0;
 }
 
-.info .skills-icon i{
-  font-size: 4rem;
-}
 
 .info .skills-desc{
   font-weight: normal;
@@ -666,3 +663,21 @@ textarea::placeholder, input::placeholder{
   background: #fff;
 }
 /* END Footer */
+
+
+.copyright{
+  width: 100%;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.copyright span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #A0A0A0;
+}
