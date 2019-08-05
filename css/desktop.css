@@ -1,11 +1,15 @@
 html{
   font-size: 16px;
   scroll-behavior: smooth;
+  height:100%;
+  width:100%;
 }
 
 body{
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   color: #515151;
@@ -232,7 +236,17 @@ a{
 .main-title-container{
   width: 100%;
   min-height: 220px;
-  padding-bottom: 50px;
+  position: relative;
+}
+
+.main-title-container::after{
+  content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  clear: both;
 }
 
 .main-title-container h2{
@@ -279,7 +293,18 @@ a{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
+
+ /* To remove */
+.about-me-container{
+  background-color: blueviolet;
+}
+
+.my-skills-container{
+  background-color: rgb(199, 82, 82);
+}
+ /* To remove END*/
 
 .about-me-container::after{
   content: "About Me";
@@ -314,8 +339,15 @@ a{
   flex-wrap: wrap;
 }
 
+.about-me-title-content{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .content-info{
-  min-width: 40%;
+  min-width: 30%;
   height: 80%;
   box-sizing: border-box;
   align-items: flex-start;
@@ -361,6 +393,9 @@ a{
   color: #222222;
   font-size: 1.125rem;
   line-height: 1.9375;
+  flex-grow: 1;
+  text-align: justify;
+}
 }
 
 .content-info-desc p{
@@ -687,4 +722,9 @@ textarea::placeholder, input::placeholder{
 
 .mobile-skills-title{
   display: none;
+}
+
+.separator{
+  height: 1px;
+  width: 100%;
 }
