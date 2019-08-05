@@ -11,7 +11,7 @@
     }
 
     .my-skills-container, .my-portfolio-container, .contact-container{
-       
+       margin-top:0;
        }
 
     .cover-photo-text h1{

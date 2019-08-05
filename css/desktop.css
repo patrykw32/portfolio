@@ -616,6 +616,12 @@ a{
   left: 40px;
 }
 
+.socials-inner-container i:not(.fa-github){
+  color: #FF9A3D;
+}
+
+
+
 .envelope .envelope-text p{
   margin: 0;
   font-size: 1.125rem;
