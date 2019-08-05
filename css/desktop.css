@@ -408,6 +408,8 @@ a{
  margin-top: 60px;
 }
 
+
+
 .my-skills-container::after{
   content: "Skills";
   position: absolute;
@@ -478,6 +480,7 @@ a{
   width: 100%;
   min-height: 680px;
   position: relative;
+  margin-top: 80px;
 }
 
 .my-portfolio-inner-container{
