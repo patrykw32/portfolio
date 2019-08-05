@@ -6,8 +6,8 @@
         box-shadow: none;
     }
 
-    .about-me-container::after, .my-skills-container::after{
-        display: none;
+    .about-me-container::after, .my-skills-container::after, .my-portfolio-container::after{
+       content: none;
     }
 
     .cover-photo-text h1{
@@ -27,6 +27,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: static;
     }
 
     .my-skills-content .info{
@@ -41,8 +42,6 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
-    height: auto;
-    font-size: .8rem;
     text-align: justify;
     flex-grow: 1;
     margin: 0;
@@ -54,7 +53,6 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    background-color: #FFC53D;
     }
 
     .content-info{
@@ -67,8 +65,8 @@
     }
     
     .content-info-desc, .about-me-description-box li{
-    font-size: 1rem;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
     color: #222222;
     font-weight: normal;
     }
@@ -209,17 +207,17 @@
 
 
 
-    .mobile-skills-title{
-    display: block;
-    position: absolute;
-    top: - 10%;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-    color: #222222;
-    font-weight: bold;
+    .mobile-title-content, .mobile-title-skills, .mobile-title-portfolio{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.02em;
+        color: #222222;
+        font-weight: bold;
+        padding: 20px 0;
     }
 
 
@@ -227,7 +225,36 @@
 
 
 
-@media all and (max-width: 569px){
+@media all and (max-width: 768px){
+
+    .main-title-container {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title-container h2{
+        margin: 0;
+    }
+
+    .main-buttons .btn {
+        width: 150px;
+        height: 37.5px;
+        font-size: 1rem;
+    }
+
+    .about-me-title-content{
+        flex-direction: column;
+    }
+
+    .mobile-skills-title{
+       padding-top: 20px;
+    }
+
+
     .content-info{
         flex-direction: column;
         padding: 20px 20px 0 20px;
@@ -235,5 +262,20 @@
 
     .content-info-desc {
         padding: 0 20px 20px 20px;
+    }
+
+    .content-info-desc, .about-me-description-box li{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #222222;
+        font-weight: normal;
+    }
+}
+
+
+
+@media all and (max-width: 567px){
+    .main-title-container {
+       
     }
 }
