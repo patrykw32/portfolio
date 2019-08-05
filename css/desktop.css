@@ -237,6 +237,7 @@ a{
   width: 100%;
   min-height: 220px;
   position: relative;
+  margin: 20px 0;
 }
 
 .main-title-container::after{
@@ -286,7 +287,7 @@ a{
   background: #fff;
 }
 
-.about-me-container, .my-skills-container{
+.about-me-container, .my-skills-container {
   width: 100%;
   min-height: 430px;
   position: relative;
@@ -403,7 +404,7 @@ a{
   border-left-style: dotted;
 }
 
-.my-skills-container{
+.my-skills-container, .my-portfolio-container, .contact-container{
  margin-top: 60px;
 }
 
@@ -474,18 +475,14 @@ a{
 }
 
 .my-portfolio-container{
-  /* width: 100%; */
-  margin-top: 100px;
-  height: 680px;
+  width: 100%;
   min-height: 680px;
   position: relative;
 }
 
 .my-portfolio-inner-container{
-  height: 100%;
   width: 100%;
   flex-wrap: wrap;
-  
 }
 
 .my-portfolio-container::after{
@@ -502,7 +499,7 @@ a{
 }
 
 .my-portfolio-single{
-  height: 50%;
+  height: 340px;
   transition: all 1.4s ease-in-out;
 }
 .portfolio-1{
@@ -564,9 +561,8 @@ a{
 
 .contact-container{
   width: 100%;
-  height: 785px;
+  min-height: 785px;
   background: #FAFAFF;
-  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -575,21 +571,72 @@ a{
   width: calc(100% - 200px);
   height: 620px;
   margin: 0 auto;
-  display: flex; 
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .adress{
-  width: 30%;
+  width: 40%;
   height: 100%;
   background: #FF9A3D;
   color: #fff;
+  position: relative;
+}
+
+.adress::after{
+  content:'';
+  position: absolute;
+  left: 100%;
+  top: 8%;
+  width: 0;
+  height: 0;
+  border-left: 30px solid #FF9A3D;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.adress-container, .socials-container{
+  position: relative;
+  height: 50%;
+}
+
+.adress-container .envelope{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.socials-container .socials-inner-container{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.envelope .envelope-text p{
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.9375rem;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+
+.footer-icons{
+  margin: 0;
+  margin-right: 20px;
+}
+
+.socials-adress p{
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
 .form{
-  width: 70%;
+  width: 60%;
   height: 100%;
 }
 
@@ -717,7 +764,7 @@ textarea::placeholder, input::placeholder{
 }
 
 .mobile-title-skills{
-  display: none:
+  display: none;
 }
 
 .mobile-title-portfolio{
