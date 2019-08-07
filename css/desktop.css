@@ -3,6 +3,7 @@ html{
   scroll-behavior: smooth;
   height:100%;
   width:100%;
+
 }
 
 body{
@@ -13,7 +14,7 @@ body{
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   color: #515151;
-  overflow-x: hidden;
+  overflow-x: hidden;  
 }
 
 /* START common */
@@ -53,6 +54,7 @@ a{
 .main-container{
   margin: 0 auto;
   width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -93,7 +95,7 @@ a{
 }
 
 
-.menu ul li{
+.menu > ul li{
   display: inline-block;
   margin: 2rem 4rem 0 0;
   font-size: 1.125rem;
@@ -347,7 +349,7 @@ a{
 }
 
 .content-info{
-  min-width: 30%;
+  min-width: 45%;
   height: 80%;
   box-sizing: border-box;
   align-items: flex-start;
@@ -358,7 +360,7 @@ a{
   width: 100px; 
   height: 100px;
   border-radius: 50%;
-  margin: 10px 30px 0 30px;
+  margin: 10px 40px 0 30px;
   align-items: flex-start;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
@@ -367,7 +369,7 @@ a{
   font-weight: bold;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 10px 0 20px;
+  padding-left: 20px;
 }
 
 .about-me-description-box li{
@@ -383,7 +385,7 @@ a{
 }
 
 .content-info-desc{
-  width: 60%;
+  width: 50%;
   min-height: 80%;
   align-items: center;
   box-sizing: border-box;
@@ -628,6 +630,21 @@ a{
   background: #FAFAFF;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+
+.contact-container::after{
+  content: "Contact Me";
+  position: absolute;
+  top: 20px;
+  left: 9%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.02em;
+  color: #222222;
+  font-weight: bold;
 }
 
 .contact-inner-container {
@@ -837,6 +854,10 @@ textarea::placeholder, input::placeholder{
 }
 
 .mobile-title-portfolio{
+  display: none;
+}
+
+.mobile-title-contact{
   display: none;
 }
 

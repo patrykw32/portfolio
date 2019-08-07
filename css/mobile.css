@@ -1,12 +1,21 @@
+@media all and (max-width: 1366px){
+  .about-me-content, .my-skills-content{
+    width: 100%
+  }
+}
+
 @media all and (max-width: 1024px){
 
     /* Hamburger menu to do */
+  body{
+    overflow-x: hidden;
+  }
 
     *{
         box-shadow: none;
     }
 
-    .about-me-container::after, .my-skills-container::after, .my-portfolio-container::after{
+    .about-me-container::after, .my-skills-container::after, .my-portfolio-container::after, .contact-container::after{
        content: none;
     }
 
@@ -111,9 +120,7 @@
      position: absolute;
      top: 35px;
      right: 50px;
-     
      z-index: 1;
-     
      -webkit-user-select: none;
      user-select: none;
     }
@@ -191,7 +198,7 @@
     #menu
     {
       position: absolute;
-      width: 200px;
+      width: 300px;
       margin: -100px 0 0 0;
       padding: 50px;
       padding-top: 125px;
@@ -206,8 +213,10 @@
     
     #menu li
     {
-     padding: 10px 0;
-     font-size: 22px;
+    
+     margin: 2rem 4rem 0 2rem;
+     font-size: 1.125rem;
+     line-height: 1.3125rem;
     }
 
     #menuToggle input:checked ~ ul
@@ -267,7 +276,7 @@
     /* Footer Contact END*/
 
 
-    .mobile-title-content, .mobile-title-skills, .mobile-title-portfolio, .my-title-contact{
+    .mobile-title-content, .mobile-title-skills, .mobile-title-portfolio, .mobile-title-contact{
         display: flex;
         width: 100%;
         text-align: center;
