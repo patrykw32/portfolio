@@ -88,9 +88,10 @@ a{
   height: 100%;
 }
 
-.menu .mobile-menu {
+#menuToggle {
   display: none;
 }
+
 
 .menu ul li{
   display: inline-block;
