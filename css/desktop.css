@@ -66,6 +66,7 @@ a{
   box-sizing: border-box;
   padding-bottom: 20px;
   height: 95px;
+  overflow-x: hidden;
 }
 
 .nav .logo{
@@ -82,7 +83,12 @@ a{
   width: 50%;
 }
 
-.menu .mobile-nav {
+.menu{
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.menu .mobile-menu {
   display: none;
 }
 
@@ -523,6 +529,7 @@ a{
   max-width: 100%;
   background: url(../img/portfolio1.jpg) no-repeat center center;
   background-size: cover;
+  position: relative;
 }
 
 .portfolio-2-img{
@@ -530,6 +537,7 @@ a{
   max-width: 100%;
   background: url(../img/portfolio2.jpg) no-repeat center center;
   background-size: cover;
+  position: relative;
 }
 
 .portfolio-3-img{
@@ -537,6 +545,7 @@ a{
   max-width: 100%;
   background: url(../img/portfolio3.jpg) no-repeat center center;
   background-size: cover;
+  position: relative;
 }
 
 .portfolio-4-img{
@@ -544,6 +553,7 @@ a{
   max-width: 100;
   background: url(../img/portfolio4.jpg) no-repeat center center;
   background-size: cover;
+  position: relative;
 }
 
 .portfolio-5-img{
@@ -551,6 +561,55 @@ a{
   max-width: 100%;
   background: url(../img/portfolio5.jpg) no-repeat center center;
   background-size: cover;
+  position: relative;
+}
+
+.portfolio-1-img .portfolio-title, .portfolio-5-img .portfolio-title{
+  position: absolute;
+  width: 137px;
+  height: 47px;
+  left: 36px;
+  top: 25px;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 47px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+
+}
+
+.portfolio-1-img .portfolio-short-info, .portfolio-5-img .portfolio-short-info{
+  position: absolute;
+  max-width: 80%;
+  height: 31px;
+  left: 36px;
+  top: 76px;
+  font-family: Raleway;
+  font-size: 1rem;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+
+}
+
+.portfolio-1-img .btn, .portfolio-5-img .btn {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 36px;
+  top: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+  border: 1px solid #FFC53D;
+  border-radius: 15px;
+  transition: all ease 0.4s; 
 }
 
 
